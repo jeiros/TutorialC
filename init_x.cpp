@@ -2,8 +2,7 @@
 
 int main()
 {
-	int x;
-	x = 5;
-	std::cout << x;
+	int x=5;
+	std::cout << x << std::endl;
 	return 0;
 }
