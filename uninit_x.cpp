@@ -3,6 +3,6 @@
 int main()
 {
 	int x;
-	std::cout << x << std::endl;
+	std::cout << x;
 	return 0;
 }
