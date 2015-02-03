@@ -13,27 +13,27 @@ int main()
     double dY;
     cin >> dY;
  
-    cout << "Enter one of the following: +, -, *, or /";
+    cout << "Enter one of the following: +, -, *, or /: ";
     char chChoice;
     cin >> chChoice;
 
-    if (chChoice == "+")
+    if (chChoice == '+')
     {
     	cout << dX << " + " << dY << " = " << dX + dY << endl;
     }
-    if (chChoice == "-")
+    if (chChoice == '-')
     {
     	cout << dX << " - " << dY << " = " << dX - dY << endl;
     }
-    if (chChoice == "*")
+    if (chChoice == '*')
     {
     	cout << dX << " * " << dY << " = " << dX * dY << endl;
     }
-    if (chChoice == "/")
+    if (chChoice == '/')
     {
     	cout << dX << " / " << dY << " = " << dX / dY << endl;
     }
     else
-    	cout << "Please enter a valid symbol";
+    	cout << "Please enter a valid symbol." << endl;
     return 0;
 }
