@@ -34,6 +34,8 @@ int main()
     	cout << dX << " / " << dY << " = " << dX / dY << endl;
     }
     else
+    {    
     	cout << "Please enter a valid symbol." << endl;
+    }
     return 0;
 }
