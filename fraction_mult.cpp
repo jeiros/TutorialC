@@ -1,37 +1,39 @@
 #include <iostream>
-#include <iomanip>
+ 
 struct Fraction
 {
-	int numerator;
-	int denominator;
+    int nNumerator;
+    int nDenominator;
 };
-
-double Multiply(Fraction sf1, Fraction sf2)
+ 
+void Multiply(Fraction sF1, Fraction sF2)
 {
-	using namespace std;
-
-	cout << static_cast<float>(sf1.numerator * sf2.numerator) / 
-		(sf1.denominator * sf2.denominator);
-
+    using namespace std;
+ 
+    // Don't forget the static cast, otherwise the compiler will do integer division!
+    cout << static_cast<float>(sF1.nNumerator * sF2.nNumerator) /
+        (sF1.nDenominator * sF2.nDenominator) << endl;
 }
-
-int main(int argc, char const *argv[])
+ 
+int main()
 {
-	using namespace std;
-
-	Fraction sf1;
-		cout << "Input the first numerator: ";
-		cin >> sf1.numerator;
-		cout << "Input the first denominator: ";
-		cin >> sf1.denominator;
-	Fraction sf2;
-		cout << "Input the second numerator: ";
-		cin >> sf2.numerator;
-		cout << "Input the second denominator: ";
-		cin >> sf2.denominator;
-	
-	cout << Multiply(sf1,sf2) << endl;
-
-
-	return 0;
+    using namespace std;
+ 
+    // Allocate our first fraction
+    Fraction sF1;
+    cout << "Input the first numerator: ";
+    cin >> sF1.nNumerator;
+    cout << "Input the first denominator: ";
+    cin >> sF1.nDenominator;
+ 
+    // Allocate our second fraction
+    Fraction sF2;
+    cout << "Input the second numerator: ";
+    cin >> sF2.nNumerator;
+    cout << "Input the second denominator: ";
+    cin >> sF2.nDenominator;
+ 
+    Multiply(sF1, sF2);
+ 
+    return 0;
 }
