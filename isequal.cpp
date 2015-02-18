@@ -13,6 +13,6 @@ bool IsEqual (double dX, double dY, double dEpsilon)
 
 int main()
 {
-	std::cout >> IsEqual();
+	std::cout << IsEqual(double dX, double dY, double dEpsilon);
 	return 0;
 }
