@@ -8,10 +8,10 @@ int quad_roots(double A, double B, double C) {
     {
         /*Not an equation*/
         return -3;
-    } else if (!(A && B && C)) {
+    } else if (!(A || B || C)) {
         /*No meaningful solution*/
         return -2;
-    } else if (!A && B) {
+    } else if ((A == 0) && (B != 0)) {
         /*Linear eq*/
         roots[0] = -C/B;
         return -1;
