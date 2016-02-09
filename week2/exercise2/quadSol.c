@@ -1,5 +1,7 @@
 #include <math.h>
 #include <stdio.h>
+
+
 int quad_roots(double A, double B, double C) {
     double roots[2];
     double det = ((B*B) - (4*A*C));
