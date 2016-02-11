@@ -1,6 +1,6 @@
 #include <math.h>
 #include <stdio.h>
-
+#include "find_number_of_roots.h"
 
 int find_number_of_roots(int A, int B, int C, int D, double *real) {
 

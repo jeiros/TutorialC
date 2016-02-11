@@ -1,6 +1,5 @@
 #include <stdio.h>
-
-int find_number_of_roots(int A, int B, int C, int D, double *real);
+#include "find_number_of_roots.h"
 
 int main(int argc, char const *argv[]) {
   double A, B, C, D;
